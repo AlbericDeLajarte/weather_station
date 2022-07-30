@@ -6,7 +6,11 @@ Using the SHT30 from: https://docs.m5stack.com/en/unit/envIII
 
 ## Setup
 
-Activate a second I2C bus:
+### Activate a second I2C bus:
 ````
-test
+sudo nano /boot/config.txt
+````
+add:
+````
+dtoverlay=i2c-gpio,bus=3,i2c_gpio_delay_us=1,i2c_gpio_sda=17,i2c_gpio_scl=27
 ````
