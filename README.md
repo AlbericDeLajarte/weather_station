@@ -14,3 +14,7 @@ add:
 ````
 dtoverlay=i2c-gpio,bus=3,i2c_gpio_delay_us=1,i2c_gpio_sda=17,i2c_gpio_scl=27
 ````
+### Install modules
+````
+pip3 install dash pandas
+````
